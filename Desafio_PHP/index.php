@@ -70,15 +70,6 @@ $raul = new Professor2 ("Raul", 38, 0);
 $erivan = new Funcionario1 ("Erivan", 49, 0);
 $andreia = new Funcionario2 ("Andréia", 53, 0);
 
-
-
-
-
-
-
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -86,19 +77,44 @@ $andreia = new Funcionario2 ("Andréia", 53, 0);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Informações da Escola</h1>
-        <ul>
-            <li><?php $fany->falar(); ?></li>
-            <li><?php $isabelle->falar(); ?></li>
-            <li><?php $suzi->falar(); ?></li>
-            <li><?php $raul->falar(); ?></li>
-            <li><?php $erivan->falar(); ?></li>
-            <li><?php $andreia->falar(); ?></li>
-        </ul>
+    
+
+<div class="container mt-3">
+<h1>Informações da Escola</h1>
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Alunos:</h5>
+            <p class="card-text"><?php $fany->falar(); ?></p>
+            <p class="card-text"><?php $isabelle->falar(); ?></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Professores:</h5>
+            <p class="card-text"><?php $suzi->falar(); ?></p>
+            <p class="card-text"><?php $raul->falar(); ?></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Funcionários:</h5>
+            <p class="card-text"><?php $erivan->falar(); ?></p>
+            <p class="card-text"><?php $andreia->falar(); ?></p>
+          </div>
+        </div>
+      </div>
+      
     </div>
+  </div>
 </body>
 </html>
