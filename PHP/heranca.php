@@ -24,8 +24,6 @@ class Aluno extends Pessoas{
 }
 
 
-// A classe Professor vai herdar de Pessoas
-
 class Professor extends Pessoas{
     public function ensinar (){
         echo "{$this->nome} está ensinando.";
@@ -38,6 +36,5 @@ echo $fany->apresentar();
 echo $fany->estudar();
 echo $raul->apresentar();
 echo $raul->ensinar();
-
 
 ?>
